@@ -2,10 +2,15 @@
   "name": "@zeokku/vue-gsap",
   "version": "0.1.0",
   "type": "module",
+  "module": "dist-lib/index.js",
+  "types": "dist-lib/index.d.ts",
+  "files": [
+    "dist-lib/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --project tsconfig.lib.json",
-    "build-demo": "vue-tsc --noEmit && vite build",
+    "build-demo": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
