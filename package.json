@@ -1,6 +1,7 @@
 {
   "name": "@zeokku/vue-gsap",
-  "version": "0.1.0",
+  "description": "🦸 Powerful GSAP directive for Vue. Define DOM element animations declaratively in your template without dealing with refs",
+  "version": "0.1.1",
   "type": "module",
   "module": "dist-lib/index.js",
   "types": "dist-lib/index.d.ts",
