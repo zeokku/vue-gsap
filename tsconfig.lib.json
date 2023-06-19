@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "isolatedModules": true,
+      "lib": ["ESNext", "DOM"],
+      "skipLibCheck": true,
+      "outDir": "dist-lib",
+      "declaration": true
+    },
+    "include": ["src/plugin/*.ts", "src/plugin/*.d.ts"]
+}
