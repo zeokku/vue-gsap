@@ -1,5 +1,7 @@
 # 🦸 Powerful GSAP directive for Vue
 
+[Checkout the demo](https://zeokku.github.io/vue-gsap/)
+
 ## Installation
 
 Install the library
