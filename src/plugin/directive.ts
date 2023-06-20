@@ -19,11 +19,6 @@ let tweenSetup = (
   let delay: number | undefined;
   let stagger: number | undefined;
 
-  if (modifiers["children"]) {
-    el = (el as HTMLElement).children;
-
-    // delete modifiers["children"]
-  }
 
   Object.keys(modifiers).forEach(m => {
     if (/^\d+$/.test(m)) {
@@ -32,6 +27,8 @@ let tweenSetup = (
       delay = parseInt(m.slice(1)) / 1000;
     } else if (/^s\d+$/.test(m)) {
       stagger = parseInt(m.slice(1)) / 1000;
+    } else if (m === 'children') {
+      el = (el as HTMLElement).children;
     } else {
       console.warn("[vue-gsap] Unknown modifier: ", m);
     }
